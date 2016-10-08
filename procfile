@@ -1,1 +1,1 @@
-web: gunicorn timer:app --log-file=-
+web: gunicorn hello:app --log-file -
