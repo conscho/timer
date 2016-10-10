@@ -7,4 +7,5 @@ app = Flask(__name__)
 def timer():
     return str(time.time() * 1000)
 
-app.run(port=sys.argv[1])
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=sys.argv[1])
